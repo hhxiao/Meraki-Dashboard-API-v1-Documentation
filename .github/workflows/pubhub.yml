@@ -1,7 +1,9 @@
 name: pubhub-notification
 
-# Run this workflow every time a new commit pushed to your repository
-on: push
+on:
+  push:
+    branches:
+      - main   # 👈 only run on main
 
 jobs:
   notification:
